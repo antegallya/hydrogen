@@ -442,8 +442,8 @@ void MidiInput::handleSysexMessage( const MidiMessage& msg )
 
 			case 3:	//DEFERRED PLAY
 			{
-				pEngine->lastMidiEvent = "MMC_PLAY";
-				aH->handleAction(mM->getMMCAction("MMC_PLAY"));
+				pEngine->lastMidiEvent = "MMC_DEFERRED_PLAY";
+				aH->handleAction(mM->getMMCAction("MMC_DEFERRED_PLAY"));
 				break;
 			}
 
